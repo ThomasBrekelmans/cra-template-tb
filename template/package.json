@@ -1,0 +1,117 @@
+{
+	"name": "cra-template-tb-app",
+	"version": "0.1.0",
+	"scripts": {
+		"start": "react-scripts start",
+		"test": "react-scripts test",
+		"build": "react-scripts build",
+		"build:serve": "serve -s build",
+		"build:analyze": "npx source-map-explorer 'build/static/js/*.js'",
+		"browserslist:check": "npx browserslist",
+		"browserslist:update": "npx browserslist@latest --update-db"
+	},
+	"dependencies": {
+		"@emotion/react": "11.1.5",
+		"@emotion/styled": "11.1.5",
+		"react": "17.0.1",
+		"react-dom": "17.0.1",
+		"web-vitals": "1.1.0"
+	},
+	"devDependencies": {
+		"@testing-library/jest-dom": "5.11.9",
+		"@testing-library/react": "11.2.5",
+		"@testing-library/user-event": "12.6.3",
+		"@types/jest": "26.0.20",
+		"@types/node": "12.19.16",
+		"@types/react": "17.0.1",
+		"@types/react-dom": "17.0.0",
+		"eslint-config-prettier": "7.2.0",
+		"husky": "4.3.8",
+		"import-sort-cli": "6.0.0",
+		"import-sort-parser-typescript": "6.0.0",
+		"import-sort-style-module-scoped": "1.0.3",
+		"lint-staged": "10.5.4",
+		"prettier": "2.2.1",
+		"react-scripts": "4.0.2",
+		"serve": "11.3.2",
+		"source-map-explorer": "2.5.2",
+		"stylelint": "13.10.0",
+		"stylelint-config-standard": "20.0.0",
+		"typescript": "4.1.3"
+	},
+	"browserslist": {
+		"production": [
+			"> 5%",
+			"last 2 versions",
+			"Firefox ESR",
+			"not dead"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest",
+			"prettier"
+		]
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"importSort": {
+		".js, .jsx": {
+			"parser": "babylon",
+			"style": "module-scoped"
+		},
+		".ts, .tsx": {
+			"parser": "typescript",
+			"style": "module-scoped"
+		}
+	},
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx}": [
+			"eslint --fix",
+			"import-sort --write",
+			"stylelint --fix",
+			"prettier --write"
+		],
+		"*.css": [
+			"stylelint --fix",
+			"prettier --write"
+		],
+		"*.{css,html,json,md}": [
+			"prettier --write"
+		]
+	},
+	"prettier": {
+		"arrowParens": "avoid",
+		"bracketSpacing": true,
+		"jsxBracketSameLine": false,
+		"jsxSingleQuote": false,
+		"htmlWhitespaceSensitivity": "strict",
+		"printWidth": 80,
+		"proseWrap": "preserve",
+		"quoteProps": "as-needed",
+		"semi": true,
+		"singleQuote": true,
+		"tabWidth": 4,
+		"trailingComma": "none",
+		"useTabs": true
+	},
+	"stylelint": {
+		"extends": "stylelint-config-standard",
+		"rules": {
+			"declaration-colon-newline-after": null,
+			"indentation": "tab",
+			"no-eol-whitespace": null,
+			"no-missing-end-of-source-newline": null,
+			"value-list-comma-newline-after": null
+		}
+	}
+}

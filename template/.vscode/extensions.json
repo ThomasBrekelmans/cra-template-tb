@@ -1,0 +1,12 @@
+{
+	"recommendations": [
+		"amatiasq.sort-imports",
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"hex-ci.stylelint-plus",
+		"jpoissonnier.vscode-styled-components",
+		"msjsdiag.debugger-for-chrome",
+		"streetsidesoftware.code-spell-checker",
+		"tyriar.sort-lines"
+	]
+}

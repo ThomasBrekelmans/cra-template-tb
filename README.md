@@ -1,5 +1,14 @@
 # Create React App with TB's template
 
+## Usage
+
+`npx create-react-app my-app --template cra-template-tb`\
+`cd my-app`\
+`code .`\
+`npm start`
+
+## Overview
+
 This is a [custom CRA template](https://create-react-app.dev/docs/custom-templates/), which has extended the official [TypeScript CRA template](https://github.com/facebook/create-react-app/tree/master/packages/cra-template-typescript) with:
 
 -   [Emotion](https://emotion.sh/docs/introduction#react) based CSS-in-JS for writing styles\

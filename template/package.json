@@ -60,6 +60,7 @@
 			"prettier"
 		]
 	},
+	"homepage": ".",
 	"husky": {
 		"hooks": {
 			"pre-commit": "lint-staged"
